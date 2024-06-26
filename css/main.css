@@ -1,7 +1,7 @@
 @import "banner.css";
 @import "brands.css";
 @import "posts.css";
-@import "scroll-animation.css";
+/* @import "scroll-animation.css"; */
 
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
@@ -16,6 +16,7 @@
 
 body {
   background: var(--color-white);
+  padding-bottom: 280px;
 }
 
 /* global variables */
@@ -28,9 +29,10 @@ body {
   --bg-scroll-bar: #d1dbe3;
   --bg-scroll-bar-dark: #cad4db;
 
-  /* background color button top */
+  /* background color */
+  --bg-black: #000;
   --bg-button-black: rgba(0, 0, 0, 0.32);
-  --bg-button-black-hover: rgba(0, 0, 0, 0.60);
+  --bg-button-black-hover: rgba(75 75 75);
 
   /* font */
   --font-family: "Poppins", sans-serif
@@ -89,13 +91,17 @@ section {
 
 /*  button top */
 .press:active {
-  transform: scale(.9);
+  transform: scale(.9) !important;
 }
 
 [data-top="top"] {
   position: fixed;
   bottom: 24px;
   right: 24px;
+
+}
+
+[data-top="top"] a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,14 +115,9 @@ section {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  transform: translateY(200%);
 }
 
-[data-top="top"].ativo {
-  transform: translateY(0);
-}
-
-[data-top="top"]:hover {
+[data-top="top"]:hover a {
   background: var(--bg-button-black-hover);
 }
 

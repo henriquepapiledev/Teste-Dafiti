@@ -1,5 +1,6 @@
 import initBannerMobile from './modules/banner.js';
-import initiScrollAnimation from './modules/scroll-animation.js';
+import initiScrollButtonTop from './modules/scroll-button-top.js';
 
 initBannerMobile();
-initiScrollAnimation();
+initiScrollButtonTop();
+AOS.init();

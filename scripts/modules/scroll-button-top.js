@@ -1,34 +1,5 @@
-export default function initiScrollAnimation() {
-  const sections = document.querySelectorAll('[data-anime="scroll"]');
+export default function initiScrollButtonTop() {
   const butttonTop = document.querySelector('[data-top="top"]');
-
-  if (sections.length) {
-    const windowHalf = window.innerHeight * 0.5;
-
-    function animaScroll() {
-      sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const isSectionVisible = sectionTop - windowHalf < 0;
-        if (isSectionVisible) {
-          section.classList.add('ativo');
-        } else {
-          section.classList.remove('ativo');
-        }
-      });
-      const scroll = window.scrollY;
-
-      if (scroll >= windowHalf) {
-        butttonTop.classList.add('ativo');
-      } else {
-        butttonTop.classList.remove('ativo');
-      }
-    }
-
-    animaScroll();
-
-    window.addEventListener('scroll', animaScroll);
-  }
-
   function getDistanceFromTheTop(element) {
     const id = element.getAttribute('href');
     return document.querySelector(id).offsetTop;

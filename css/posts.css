@@ -114,7 +114,16 @@
     padding-right: 0;
   }
 
+  .posts .posts__caption h4 {
+    font-size: 0.875em;
+  }
+
+  .posts .posts__caption p {
+    font-size: 0.75em;
+  }
+
   .posts__large {
+    width: 96%;
     -ms-grid-column: 1;
     grid-column: auto;
     -ms-grid-row: 1;
@@ -136,8 +145,8 @@
   }
 
   .posts__item {
-    height: 240px;
-    width: 98%;
+    height: 280px;
+    width: 101%;
     margin-right: 14px;
     flex-shrink: 0;
     scroll-snap-align: start;
