@@ -1,0 +1,126 @@
+@import "banner.css";
+@import "brands.css";
+@import "posts.css";
+@import "scroll-animation.css";
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-white);
+}
+
+/* global variables */
+:root {
+  /* colors */
+  --color-white: #fff;
+  --color-black: rgba(0, 0, 0, 0.80);
+
+  /* background scrollbar */
+  --bg-scroll-bar: #d1dbe3;
+  --bg-scroll-bar-dark: #cad4db;
+
+  /* background color button top */
+  --bg-button-black: rgba(0, 0, 0, 0.32);
+  --bg-button-black-hover: rgba(0, 0, 0, 0.60);
+
+  /* font */
+  --font-family: "Poppins", sans-serif
+}
+
+.container {
+  width: 994px;
+  /* width: 1185px; */
+
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 22px 28px;
+  -ms-grid-columns: 2fr 28px 2fr;
+  grid-template-columns: 2fr 2fr;
+  -ms-grid-rows: 1fr 22px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+section {
+  padding: 24px;
+}
+
+@media(max-width: 992px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    height: auto;
+  }
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--color-white);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-scroll-bar);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-scroll-bar-dark);
+}
+
+/*  button top */
+.press:active {
+  transform: scale(.9);
+}
+
+[data-top="top"] {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-black);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 3px 16px var(--bg-button-black);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  transform: translateY(200%);
+}
+
+[data-top="top"].ativo {
+  transform: translateY(0);
+}
+
+[data-top="top"]:hover {
+  background: var(--bg-button-black-hover);
+}
+
+[data-top="top"] img {
+  pointer-events: none;
+  width: 14px;
+}

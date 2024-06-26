@@ -1,0 +1,18 @@
+/* banner */
+.banner img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.banner a {
+  display: block;
+}
+
+@media(min-width: 1400px) {
+  .banner img {
+    height: 85vh;
+    -o-object-position: bottom;
+    object-position: bottom;
+  }
+}
