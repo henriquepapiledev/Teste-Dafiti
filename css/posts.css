@@ -83,6 +83,7 @@
 
 @media(max-width: 992px) {
   .posts {
+    padding-left: 16px;
     padding-right: 0;
   }
 
@@ -96,6 +97,7 @@
   .posts__carousel {
     display: flex !important;
     justify-content: flex-start;
+    gap: 0 !important;
     overflow: auto;
     overflow-y: hidden;
     -ms-scroll-snap-type: x mandatory;
@@ -107,8 +109,8 @@
   }
 
   .posts__item {
-    height: 75vw;
-    width: 101%;
+    height: 65vw;
+    width: 92%;
     margin-right: 14px;
     flex-shrink: 0;
     scroll-snap-align: start;
