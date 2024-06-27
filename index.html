@@ -20,7 +20,11 @@
 <body>
   <header class="banner" id="banner" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="200" data-aos-duration="800" data-aos-offset="0">
     <a href="#">
-      <img src="images/banners/01-Principal_Desktop.jpg" aria-label="Banner Sneaker Club by Kanui" alt="Sneaker Club by Kanui" width="100%" data-banner="banner">
+      <picture>
+        <source media="(max-width: 991px)" srcset="images/banners/02-Principal_Mobile.jpg">
+        <source media="(min-width: 992px)" srcset="images/banners/01-Principal_Desktop.jpg">
+        <img src="images/banners/01-Principal_Desktop.jpg" aria-label="Banner Sneaker Club by Kanui" alt="Sneaker Club by Kanui">
+      </picture>
     </a>
   </header>
 
@@ -119,8 +123,11 @@
     </a>
   </div>
 
-  <script type="module" src="scripts/script.js"></script>
+  <script src="scripts/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
