@@ -1,6 +1,7 @@
 @import "banner.css";
 @import "brands.css";
 @import "posts.css";
+@import "coupon.css";
 
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
@@ -15,6 +16,11 @@
 body {
   background: var(--color-white);
   padding-bottom: 140px;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
 }
 
 /* global variables */
