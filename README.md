@@ -1,4 +1,4 @@
-**Especificações para criação do teste**
+## **Especificações para criação do teste**
 
 O teste é para ser simples, apenas para verificarmos sua metodologia de código, semântica e inovação.
 <br><br>
@@ -15,3 +15,11 @@ OBS1: Qualquer tipo de interação será ponto positivo
 OBS2: Banner principal usa diferentes imagens para desktop e mobile 
 <br>
 OBS3: Boa sorte!!! ;)
+
+## 🔗 Link para acesso
+
+https://teste-dafiti.vercel.app
+
+## Resultado
+
+![Capa](https://i.imgur.com/RAauefI.png)
